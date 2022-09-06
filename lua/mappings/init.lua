@@ -2,6 +2,8 @@ local map = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true, nowait = true }
 local Terminal = require('toggleterm.terminal').Terminal
 
+local terminals = {}
+
 vim.g.mapleader = ' '
 
 -- Standard stuff
@@ -30,6 +32,7 @@ local lazygit = Terminal:new({
   cmd = "lazygit",
   dir = "git_dir",
   direction = "float",
+  count = 10,
   float_opts = {
     border = "double",
   },
