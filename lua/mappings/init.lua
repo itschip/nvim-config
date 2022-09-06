@@ -13,3 +13,6 @@ map('n', '<S-h>', "<cmd>BufferLineCyclePrev<cr>", opts)
 map('n', '<leader>ff', ":Telescope find_files<CR>", opts)
 map('n', '<leader>fw', ":Telescope live_grep<CR>", opts)
 map('i', "jk", "<C-\\><C-n>", opts) 
+
+
+-- Diagnostics
