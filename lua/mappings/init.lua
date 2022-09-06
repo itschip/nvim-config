@@ -16,7 +16,7 @@ map('i', "jk", "<C-\\><C-n>", opts)
 map('i', "jj", "<C-\\><C-n>", opts) 
 
 -- Terminal
-map('n', '<leader>gg', '<cmd>ToggleTerm direction=float cmd="lazygit"<cr>', opts)
+map('n', '<leader>gg', '<cmd>TermExec direction=float cmd="lazygit"<cr>', opts)
 map('n', "<C-\\>", "<cmd>ToggleTerm size-10 direction=horizontal<cr>", opts)
 
 map('t', "<esc>", "<C-\\><C-n>", opts)
