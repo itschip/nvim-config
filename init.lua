@@ -1,0 +1,7 @@
+require('settings')
+require('mappings')
+require('packer-config')
+require('bufferline-config')
+require('feline-config')
+require('mason-config')
+require('cmp-config')
