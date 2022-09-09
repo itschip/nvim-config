@@ -1,11 +1,12 @@
 local set = vim.opt
 
-vim.cmd("colorscheme carbonfox")
+vim.o.background = "dark"
+vim.cmd("colorscheme gruvbox")
 
 set.expandtab = true
 set.smarttab = true
-set.shiftwidth = 4
-set.tabstop = 4
+set.shiftwidth = 2
+set.tabstop = 2
 
 set.hlsearch = true
 set.incsearch = true

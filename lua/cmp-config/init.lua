@@ -66,3 +66,6 @@
   require('lspconfig')['sumneko_lua'].setup {
     capabilities = capabilities
   }
+  require('lspconfig')['gopls'].setup {
+    capabilities = capabilities
+  }

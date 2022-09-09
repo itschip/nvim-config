@@ -21,7 +21,7 @@ return require('packer').startup(function()
     use "hrsh7th/cmp-cmdline"
 
     use "hrsh7th/nvim-cmp"
-    
+
     use "L3MON4D3/LuaSnip"
     use "saadparwaiz1/cmp_luasnip"
 
@@ -40,4 +40,16 @@ return require('packer').startup(function()
             direction = "horizontal",
         })
     end}
+
+    use "jose-elias-alvarez/null-ls.nvim"
+
+    use {
+      "windwp/nvim-autopairs",
+      config = function() require("nvim-autopairs").setup {} end
+    }
+
+    use { "ellisonleao/gruvbox.nvim" }
+
+
+    use "mrjones2014/smart-splits.nvim"
 end)

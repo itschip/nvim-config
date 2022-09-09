@@ -25,6 +25,30 @@ map('n', "<leader>th", "<cmd>ToggleTerm size-10 direction=horizontal<cr>", opts)
 
 map('t', "<esc>", "<C-\\><C-n>", opts)
 
+-- LSP Mappings
+map('n', "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", opts)
+map('n', "gl", "<cmd>lua vim.diagnostic.open_float()<cr>", opts)
+
+-- Smart Splits
+map('n', "<C-h>", "<cmd>lua require('smart-splits').move_cursor_left()<cr>", opts)
+map('n', "<C-j>", "<cmd>lua require('smart-splits').move_cursor_down()<cr>", opts)
+map('n', "<C-k>", "<cmd>lua require('smart-splits').move_cursor_up()<cr>", opts)
+map('n', "<C-l>", "<cmd>lua require('smart-splits').move_cursor_right()<cr>", opts)
+
+map('n', "<C-Up>", "<cmd>lua require('smart-splits').resize_up()<cr>", opts)
+map('n', "<C-Down>", "<cmd>lua require('smart-splits').resize_down()<cr>", opts)
+map('n', "<C-Left>", "<cmd>lua require('smart-splits').resize_left()<cr>", opts)
+map('n', "<C-Right>", "<cmd>lua require('smart-splits').resize_right()<cr>", opts)
+
+
+
+
+
+
+
+
+
+
 
 
 -- Lazygit stuff
