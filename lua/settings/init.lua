@@ -1,8 +1,5 @@
 local set = vim.opt
 
-vim.o.background = "dark"
-vim.cmd("colorscheme gruvbox")
-
 set.expandtab = true
 set.smarttab = true
 set.shiftwidth = 2
