@@ -1,5 +1,5 @@
 local map = vim.api.nvim_set_keymap
-local opts = { noremap = true, silent = true, nowait = true }
+local opts = { noremap = true, silent = true }
 local Terminal = require('toggleterm.terminal').Terminal
 
 local terminals = {}
@@ -22,6 +22,7 @@ map('i', "jj", "<C-\\><C-n>", opts)
 map('n', '<leader>gg', '<cmd>lua _lazygit_toggle()<cr>', opts)
 map('n', "<C-\\>", "<cmd>ToggleTerm<cr>", opts)
 map('n', "<leader>th", "<cmd>ToggleTerm size-10 direction=horizontal<cr>", opts)
+map('n', "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", opts)
 
 map('t', "<esc>", "<C-\\><C-n>", opts)
 
@@ -41,8 +42,9 @@ map('n', "<C-Left>", "<cmd>lua require('smart-splits').resize_left()<cr>", opts)
 map('n', "<C-Right>", "<cmd>lua require('smart-splits').resize_right()<cr>", opts)
 
 
-
-
+-- Nvim tree
+map('n', '<leader>o', ":NvimTreeOpen<CR>", opts)
+map('n', '<leader>e', ":NvimTreeClose<CR>", opts)
 
 
 

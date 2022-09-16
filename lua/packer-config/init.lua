@@ -13,6 +13,7 @@ return require('packer').startup(function()
     use "williamboman/mason.nvim"
     use "williamboman/mason-lspconfig.nvim"
 
+
     use "neovim/nvim-lspconfig"
 
     use "hrsh7th/cmp-nvim-lsp"
@@ -70,4 +71,13 @@ return require('packer').startup(function()
       },
       tag = 'nightly' -- optional, updated every week. (see issue #1193)
     }
+
+    use {
+      "jayp0521/mason-null-ls.nvim",
+      after = {
+        "null-ls.nvim",
+        "mason.nvim",
+      },
+    }
+
 end)
