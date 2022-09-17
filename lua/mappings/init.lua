@@ -20,6 +20,7 @@ map('i', "jj", "<C-\\><C-n>", opts)
 
 -- Terminal
 map('n', '<leader>gg', '<cmd>lua _lazygit_toggle()<cr>', opts)
+map('n', '<leader>fm', '<cmd>lua _lazyfivem_toggle()<cr>', opts)
 map('n', "<C-\\>", "<cmd>ToggleTerm<cr>", opts)
 map('n', "<leader>th", "<cmd>ToggleTerm size-10 direction=horizontal<cr>", opts)
 map('n', "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", opts)
@@ -73,6 +74,20 @@ local lazygit = Terminal:new({
   end,
 })
 
+
 function _lazygit_toggle()
   lazygit:toggle()
+end
+
+local lazyfivem = Terminal:new({
+  cmd = "lazyfivem",
+  direction = "float",
+  count = 15,
+  float = {
+    border = "double",
+  }
+})
+
+function _lazyfivem_toggle()
+  lazyfivem:toggle()
 end
