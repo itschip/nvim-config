@@ -15,6 +15,7 @@ map('n', '<S-l>', "<cmd>BufferLineCycleNext<cr>", opts)
 map('n', '<S-h>', "<cmd>BufferLineCyclePrev<cr>", opts) 
 map('n', '<leader>ff', ":Telescope find_files<CR>", opts)
 map('n', '<leader>fw', ":Telescope live_grep<CR>", opts)
+map('n', '<leader>f', ":Telescope git_files<CR>", opts)
 map('i', "jk", "<C-\\><C-n>", opts) 
 map('i', "jj", "<C-\\><C-n>", opts) 
 
