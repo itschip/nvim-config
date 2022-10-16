@@ -5,10 +5,6 @@ return require("packer").startup(function()
 
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.0", requires = { { "nvim-lua/plenary.nvim" } } })
 
-	use("EdenEast/nightfox.nvim")
-
-	use("feline-nvim/feline.nvim")
-
 	use("williamboman/mason.nvim")
 	use("williamboman/mason-lspconfig.nvim")
 
@@ -53,11 +49,7 @@ return require("packer").startup(function()
 		end,
 	})
 
-	use({ "ellisonleao/gruvbox.nvim" })
-
 	use("mrjones2014/smart-splits.nvim")
-
-	use("marko-cerovac/material.nvim")
 
 	use({ "catppuccin/nvim", as = "catppuccin" })
 
@@ -67,6 +59,7 @@ return require("packer").startup(function()
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
+	use("nvim-treesitter/nvim-treesitter-context")
 
 	use({
 		"kyazdani42/nvim-tree.lua",
@@ -83,4 +76,8 @@ return require("packer").startup(function()
 			"mason.nvim",
 		},
 	})
+
+	use("vim-airline/vim-airline")
+	use("vim-airline/vim-airline-themes")
+	use({ "ellisonleao/gruvbox.nvim" })
 end)

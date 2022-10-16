@@ -1,9 +1,11 @@
 local set = vim.opt
 
+vim.g.airline_theme = "base16_gruvbox_dark_hard"
+
 set.expandtab = true
 set.smarttab = true
-set.shiftwidth = 2
-set.tabstop = 2
+set.shiftwidth = 4
+set.tabstop = 4
 
 set.hlsearch = true
 set.incsearch = true
@@ -14,9 +16,8 @@ set.splitbelow = true
 set.splitright = true
 set.wrap = false
 set.scrolloff = 5
-set.fileencoding = 'uft-8'
+set.fileencoding = "uft-8"
 set.termguicolors = true
-
 
 set.relativenumber = true
 set.number = true
