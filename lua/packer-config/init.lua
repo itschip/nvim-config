@@ -70,6 +70,15 @@ return require("packer").startup(function()
 	})
 
 	use({
+		"rktjmp/lush.nvim",
+	})
+
+	use({
+		"nvim-lualine/lualine.nvim",
+		requires = { "kyazdani42/nvim-web-devicons", opt = true },
+	})
+
+	use({
 		"jayp0521/mason-null-ls.nvim",
 		after = {
 			"null-ls.nvim",
@@ -77,7 +86,11 @@ return require("packer").startup(function()
 		},
 	})
 
-	use("vim-airline/vim-airline")
-	use("vim-airline/vim-airline-themes")
-	use({ "ellisonleao/gruvbox.nvim" })
+	use({
+		"mcchrish/zenbones.nvim",
+		-- Optionally install Lush. Allows for more configuration or extending the colorscheme
+		-- If you don't want to install lush, make sure to set g:zenbones_compat = 1
+		-- In Vim, compat mode is turned on as Lush only works in Neovim.
+		requires = "rktjmp/lush.nvim",
+	})
 end)

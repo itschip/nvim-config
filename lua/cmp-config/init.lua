@@ -72,6 +72,9 @@ require("lspconfig")["gopls"].setup({
 require("lspconfig")["csharp_ls"].setup({
 	capabilities = capabilities,
 })
+require("lspconfig")["dockerls"].setup({
+	capabilities = capabilities,
+})
 require("lspconfig")["rust_analyzer"].setup({
 	capabilities = capabilities,
 })
