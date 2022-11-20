@@ -30,8 +30,9 @@ map("t", "<esc>", "<C-\\><C-n>", opts)
 
 -- LSP Mappings
 map("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>", opts)
-map("n", "gm", "<cmd>lua vim.lsp.buf.implementation()<cr>", opts)
+map("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", opts)
 map("n", "gl", "<cmd>lua vim.diagnostic.open_float()<cr>", opts)
+map("n", "gh", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
 
 -- Smart Splits
 map("n", "<C-h>", "<cmd>lua require('smart-splits').move_cursor_left()<cr>", opts)

@@ -1,9 +1,7 @@
-vim.opt.background = "dark"
+vim.opt.background = "light"
 
-vim.g.zenbones_transparent_background = true
+vim.g.zenbones_transparent_background = false
 vim.g.tokyobones_transparent_background = true
 vim.g.rosebones_transparent_background = true
 
-vim.cmd("colorscheme tokyobones")
-
-vim.cmd("hi CursorLine cterm=underline term=underline ctermbg=NONE guibg=NONE")
+vim.cmd("colorscheme zenbones")
