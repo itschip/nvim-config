@@ -1,3 +1,6 @@
 require("lualine").setup({
-	options = { theme = "zenbones" }, -- or any other flavor
+	options = {
+		section_separators = { left = "", right = "" },
+		component_separators = { left = "", right = "" },
+	},
 })

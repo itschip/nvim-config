@@ -10,6 +10,8 @@ return require("packer").startup(function()
 
 	use("neovim/nvim-lspconfig")
 
+	use("savq/melange")
+
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
@@ -93,4 +95,6 @@ return require("packer").startup(function()
 		-- In Vim, compat mode is turned on as Lush only works in Neovim.
 		requires = "rktjmp/lush.nvim",
 	})
+
+	use("folke/tokyonight.nvim")
 end)
