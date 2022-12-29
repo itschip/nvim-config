@@ -46,7 +46,7 @@ map("n", "<C-Left>", "<cmd>lua require('smart-splits').resize_left()<cr>", opts)
 map("n", "<C-Right>", "<cmd>lua require('smart-splits').resize_right()<cr>", opts)
 
 -- Nvim tree
-map("n", "<leader>o", ":NvimTreeOpen<CR>", opts)
+map("n", "<leader>o", ":Explore<CR>", opts)
 map("n", "<leader>e", ":NvimTreeClose<CR>", opts)
 
 -- Lazygit stuff

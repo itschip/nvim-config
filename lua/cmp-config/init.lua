@@ -78,3 +78,9 @@ require("lspconfig")["dockerls"].setup({
 require("lspconfig")["rust_analyzer"].setup({
 	capabilities = capabilities,
 })
+require("lspconfig")["cssls"].setup({
+	capabilities = capabilities,
+})
+require("lspconfig")["svelte"].setup({
+	capabilities = capabilities,
+})
