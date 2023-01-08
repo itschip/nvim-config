@@ -98,4 +98,7 @@ return require("packer").startup(function()
 	})
 
 	use("folke/tokyonight.nvim")
+	use({ "ellisonleao/gruvbox.nvim" })
+
+	use("andweeb/presence.nvim")
 end)
