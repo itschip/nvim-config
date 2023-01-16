@@ -84,3 +84,6 @@ require("lspconfig")["cssls"].setup({
 require("lspconfig")["svelte"].setup({
 	capabilities = capabilities,
 })
+require("lspconfig")["clangd"].setup({
+	capabilities = capabilities,
+})
