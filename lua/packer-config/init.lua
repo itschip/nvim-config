@@ -110,4 +110,6 @@ return require("packer").startup(function()
 
 	use("andweeb/presence.nvim")
 	use("nvim-lua/lsp-status.nvim")
+
+	use("jlcrochet/vim-razor")
 end)
