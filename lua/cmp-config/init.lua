@@ -87,3 +87,9 @@ require("lspconfig")["svelte"].setup({
 require("lspconfig")["clangd"].setup({
 	capabilities = capabilities,
 })
+require("lspconfig")["astro"].setup({
+	capabilities = capabilities,
+})
+require("lspconfig")["prismals"].setup({
+	capabilities = capabilities,
+})
