@@ -10,8 +10,6 @@ return require("packer").startup(function()
 
 	use("neovim/nvim-lspconfig")
 
-	use("savq/melange")
-
 	use("hrsh7th/cmp-nvim-lsp")
 	use("hrsh7th/cmp-buffer")
 	use("hrsh7th/cmp-path")
@@ -53,24 +51,13 @@ return require("packer").startup(function()
 
 	use("mrjones2014/smart-splits.nvim")
 
-	use({ "catppuccin/nvim", as = "catppuccin" })
-
 	use({
 		"nvim-treesitter/nvim-treesitter",
 		run = function()
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
-	use("nvim-treesitter/nvim-treesitter-context")
-
-	--[[use({
-		"kyazdani42/nvim-tree.lua",
-		requires = {
-			"kyazdani42/nvim-web-devicons", -- optional, for file icons
-		},
-		tag = "nightly", -- optional, updated every week. (see issue #1193)
-	})]]
-	--
+	-- use("nvim-treesitter/nvim-treesitter-context")
 
 	use({
 		"rktjmp/lush.nvim",
@@ -82,6 +69,12 @@ return require("packer").startup(function()
 	})
 
 	use({
+		"projekt0n/github-nvim-theme",
+		tag = "v0.0.7",
+		requires = { { "nvim-lualine/lualine.nvim", opt = true } },
+	})
+
+	use({
 		"jayp0521/mason-null-ls.nvim",
 		after = {
 			"null-ls.nvim",
@@ -89,24 +82,10 @@ return require("packer").startup(function()
 		},
 	})
 
-	use({
-		"mcchrish/zenbones.nvim",
-		-- Optionally install Lush. Allows for more configuration or extending the colorscheme
-		-- If you don't want to install lush, make sure to set g:zenbones_compat = 1
-		-- In Vim, compat mode is turned on as Lush only works in Neovim.
-		requires = "rktjmp/lush.nvim",
-	})
-
-	use("folke/tokyonight.nvim")
-	use({ "ellisonleao/gruvbox.nvim" })
-
-	use({
-		"rose-pine/neovim",
-		as = "rose-pine",
-	})
-
 	use("andweeb/presence.nvim")
 	use("nvim-lua/lsp-status.nvim")
 
 	use("jlcrochet/vim-razor")
+
+	use("savq/melange-nvim")
 end)

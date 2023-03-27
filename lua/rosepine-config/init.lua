@@ -1,6 +1,5 @@
 require("rose-pine").setup({
-	disable_background = true,
-	dark_variant = "moon",
+	dark_variant = "dawn",
 })
 
 vim.cmd("colorscheme rose-pine")
