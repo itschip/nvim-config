@@ -93,3 +93,9 @@ require("lspconfig")["astro"].setup({
 require("lspconfig")["prismals"].setup({
 	capabilities = capabilities,
 })
+require("lspconfig")["zls"].setup({
+	capabilities = capabilities,
+})
+require("lspconfig")["pylsp"].setup({
+	capabilities = capabilities,
+})

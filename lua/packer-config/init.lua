@@ -57,7 +57,6 @@ return require("packer").startup(function()
 			require("nvim-treesitter.install").update({ with_sync = true })
 		end,
 	})
-	-- use("nvim-treesitter/nvim-treesitter-context")
 
 	use({
 		"rktjmp/lush.nvim",
@@ -66,12 +65,6 @@ return require("packer").startup(function()
 	use({
 		"nvim-lualine/lualine.nvim",
 		requires = { "kyazdani42/nvim-web-devicons", opt = true },
-	})
-
-	use({
-		"projekt0n/github-nvim-theme",
-		tag = "v0.0.7",
-		requires = { { "nvim-lualine/lualine.nvim", opt = true } },
 	})
 
 	use({
@@ -87,5 +80,8 @@ return require("packer").startup(function()
 
 	use("jlcrochet/vim-razor")
 
-	use("savq/melange-nvim")
+	use("rebelot/kanagawa.nvim")
+
+	use("wakatime/vim-wakatime")
+	use("lukas-reineke/indent-blankline.nvim")
 end)

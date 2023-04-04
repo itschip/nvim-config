@@ -8,6 +8,6 @@ require("lualine").setup({
 		lualine_b = { "branch", "diff", "diagnostics" },
 		lualine_c = { "filename" },
 		lualine_x = { "encoding", "filetype" },
-		lualine_y = { "progress", "buffers" },
+		lualine_y = { "progress" },
 	},
 })
