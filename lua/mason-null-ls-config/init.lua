@@ -9,6 +9,8 @@ require("mason-null-ls").setup({
 		"golines",
 		"stylua",
 		"gofmt",
+		"rustfmt",
+		"shfmt",
 	},
 
 	null_ls_sources = {

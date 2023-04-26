@@ -81,6 +81,7 @@ return require("packer").startup(function()
 	use("jlcrochet/vim-razor")
 
 	use("rebelot/kanagawa.nvim")
+	use("savq/melange-nvim")
 
 	use("wakatime/vim-wakatime")
 	use("lukas-reineke/indent-blankline.nvim")
