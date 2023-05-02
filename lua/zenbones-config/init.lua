@@ -1,7 +1,9 @@
-vim.opt.background = "light"
+--vim.opt.background = "light"
+vim.opt.termguicolors = true
 vim.cmd("colorscheme melange")
 
-vim.opt.termguicolors = true
+--
+
 --
 
 --require("github-theme").setup({
