@@ -10,8 +10,15 @@ vim.g.mapleader = " "
 map("n", "<leader>fn", "<cmd>enew<cr>", opts)
 map("n", "<leader>c", "<cmd>bdelete<cr>", opts)
 
--- Navigate buffers
--- map("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", opts)
+-- Navigate
+map("n", "<leader>e", "<cmd>lua require('harpoon.mark').add_file()<cr>", opts)
+map("n", "<leader>a", "<cmd>lua require('harpoon.ui').toggle_quick_menu()<cr>", opts)
+map("n", "<S-h>", "<cmd>lua require('harpoon.ui').nav_file(1)<cr>", opts)
+map("n", "<S-j>", "<cmd>lua require('harpoon.ui').nav_file(2)<cr>", opts)
+map("n", "<S-k>", "<cmd>lua require('harpoon.ui').nav_file(3)<cr>", opts)
+map("n", "<S-l>", "<cmd>lua require('harpoon.ui').nav_file(4)<cr>", opts)
+
+map("n", "<leader>o", ":Explore<CR>", opts)
 -- map("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", opts)
 
 map("n", "<leader>ff", ":Telescope find_files previewer=false<CR>", opts)
@@ -47,8 +54,6 @@ map("n", "<C-Left>", "<cmd>lua require('smart-splits').resize_left()<cr>", opts)
 map("n", "<C-Right>", "<cmd>lua require('smart-splits').resize_right()<cr>", opts)
 
 -- Nvim tree
-map("n", "<leader>o", ":Explore<CR>", opts)
-map("n", "<leader>e", ":NvimTreeClose<CR>", opts)
 
 -- Lazygit stuff
 local lazygit = Terminal:new({
