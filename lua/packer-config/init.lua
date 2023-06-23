@@ -1,8 +1,6 @@
 return require("packer").startup(function()
 	use("wbthomason/packer.nvim")
 
-	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
-
 	use({ "nvim-telescope/telescope.nvim", tag = "0.1.0", requires = { { "nvim-lua/plenary.nvim" } } })
 
 	use("williamboman/mason.nvim")
