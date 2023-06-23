@@ -1,7 +1,6 @@
 require("settings")
 require("mappings")
 require("packer-config")
-require("bufferline-config")
 require("mason-config")
 require("cmp-config")
 require("null-ls-config")

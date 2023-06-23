@@ -11,8 +11,9 @@ map("n", "<leader>fn", "<cmd>enew<cr>", opts)
 map("n", "<leader>c", "<cmd>bdelete<cr>", opts)
 
 -- Navigate buffers
-map("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", opts)
-map("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", opts)
+-- map("n", "<S-l>", "<cmd>BufferLineCycleNext<cr>", opts)
+-- map("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", opts)
+
 map("n", "<leader>ff", ":Telescope find_files previewer=false<CR>", opts)
 map("n", "<leader>fw", ":Telescope live_grep<CR>", opts)
 map("n", "<leader>f", ":Telescope git_files previewer=false<CR>", opts)
