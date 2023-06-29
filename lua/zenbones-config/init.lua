@@ -1,8 +1,9 @@
---vim.opt.background = "light"
+vim.opt.background = "dark"
 vim.opt.termguicolors = true
 
--- vim.cmd("colorscheme melange")
-vim.cmd("colorscheme kanagawa-dragon")
+--vim.cmd("colorscheme kanagawa-dragon")
+vim.cmd("colorscheme gruber-darker")
+--vim.cmd("colorscheme zenburned")
 
 --
 
