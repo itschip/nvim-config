@@ -99,3 +99,6 @@ require("lspconfig")["zls"].setup({
 require("lspconfig")["pylsp"].setup({
 	capabilities = capabilities,
 })
+require("lspconfig")["terraformls"].setup({
+	capabilities = capabilities,
+})
