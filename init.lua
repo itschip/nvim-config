@@ -13,7 +13,6 @@ vim.opt.rtp:prepend(lazypath)
 
 require("settings")
 require("mappings")
---require("packer-config")
 require("lazy-config")
 require("mason-config")
 require("cmp-config")
