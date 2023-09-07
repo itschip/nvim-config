@@ -26,6 +26,8 @@ set.cursorline = true
 
 set.hidden = true
 
+set.clipboard = "unnamed"
+
 vim.opt.list = true
 vim.opt.listchars:append("space:⋅")
 

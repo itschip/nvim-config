@@ -84,6 +84,7 @@ return require("packer").startup(function()
 	use("jlcrochet/vim-razor")
 
 	use("rebelot/kanagawa.nvim")
+	use("blazkowolf/gruber-darker.nvim")
 
 	use({
 		"mcchrish/zenbones.nvim",

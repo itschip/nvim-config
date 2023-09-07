@@ -21,9 +21,9 @@ map("n", "<S-l>", "<cmd>lua require('harpoon.ui').nav_file(4)<cr>", opts)
 map("n", "<leader>o", ":Explore<CR>", opts)
 -- map("n", "<S-h>", "<cmd>BufferLineCyclePrev<cr>", opts)
 
-map("n", "<leader>ff", ":Telescope find_files previewer=false<CR>", opts)
+map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 map("n", "<leader>fw", ":Telescope live_grep<CR>", opts)
-map("n", "<leader>f", ":Telescope git_files previewer=false<CR>", opts)
+map("n", "<leader>f", ":Telescope git_files<CR>", opts)
 map("i", "jk", "<C-\\><C-n>", opts)
 map("i", "jj", "<C-\\><C-n>", opts)
 
