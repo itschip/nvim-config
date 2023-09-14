@@ -1,4 +1,5 @@
 require("lazy").setup({
+	"github/copilot.vim",
 	"kyazdani42/nvim-web-devicons",
 	"nvim-lua/plenary.nvim",
 	"ThePrimeagen/harpoon",
