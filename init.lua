@@ -12,6 +12,7 @@ end
 vim.opt.rtp:prepend(lazypath)
 
 require("settings")
+require("smart-splits-config")
 require("mappings")
 require("lazy-config")
 require("mason-config")

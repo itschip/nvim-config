@@ -46,4 +46,7 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	"rebelot/kanagawa.nvim",
 	"lukas-reineke/indent-blankline.nvim",
+	"norcalli/nvim-colorizer.lua",
+	"tjdevries/colorbuddy.nvim",
+	"tjdevries/gruvbuddy.nvim",
 })

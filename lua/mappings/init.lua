@@ -48,11 +48,10 @@ map("n", "<C-j>", "<cmd>lua require('smart-splits').move_cursor_down()<cr>", opt
 map("n", "<C-k>", "<cmd>lua require('smart-splits').move_cursor_up()<cr>", opts)
 map("n", "<C-l>", "<cmd>lua require('smart-splits').move_cursor_right()<cr>", opts)
 
-map("n", "<C-Up>", "<cmd>lua require('smart-splits').resize_up()<cr>", opts)
-map("n", "<C-Down>", "<cmd>lua require('smart-splits').resize_down()<cr>", opts)
-map("n", "<C-Left>", "<cmd>lua require('smart-splits').resize_left()<cr>", opts)
-map("n", "<C-Right>", "<cmd>lua require('smart-splits').resize_right()<cr>", opts)
-
+map("n", "<leader><leader>k", "<cmd>SmartResizeUp<cr>", opts)
+map("n", "<leader><leader>j", "<cmd>SmartResizeDown<cr>", opts)
+map("n", "<leader><leader>h", "<cmd>SmartResizeLeft<cr>", opts)
+map("n", "<leader><leader>l", "<cmd>SmartResizeRight<cr>", opts)
 -- Nvim tree
 
 -- Lazygit stuff
