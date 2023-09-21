@@ -47,6 +47,7 @@ require("lazy").setup({
 	"rebelot/kanagawa.nvim",
 	"lukas-reineke/indent-blankline.nvim",
 	"norcalli/nvim-colorizer.lua",
+	"folke/tokyonight.nvim",
 	"tjdevries/colorbuddy.nvim",
 	"tjdevries/gruvbuddy.nvim",
 })

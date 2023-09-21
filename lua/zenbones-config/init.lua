@@ -19,12 +19,22 @@ require("kanagawa").setup({
 			wave = {},
 			lotus = {},
 			dragon = {},
-			all = {},
+			all = {
+				diag = {
+					warning = "#fb923c",
+					error = "#ef4444",
+				},
+			},
 		},
 	},
 	overrides = function(colors)
 		local theme = colors.theme
 		return {
+			-- yellow background for diagnostics warning
+			DiagnosticError = { fg = "#ef4444" },
+			CursorLine = { bg = "#1d1f21" },
+			CursorLineNr = { fg = "#d97706" },
+
 			Pmenu = { fg = theme.ui.shade0, bg = theme.ui.bg_p1 }, -- add `blend = vim.o.pumblend` to enable transparency
 			PmenuSel = { fg = "NONE", bg = theme.ui.bg_p2 },
 			PmenuSbar = { bg = theme.ui.bg_m1 },
@@ -54,6 +64,7 @@ require("kanagawa").setup({
 vim.cmd("colorscheme kanagawa-dragon")
 --vim.cmd("colorscheme gruber-darker")
 --vim.cmd("colorscheme zenburned")
+--vim.cmd("colorscheme tokyonight-night")
 
 --
 
