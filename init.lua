@@ -11,10 +11,10 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
+require("lazy-config")
 require("settings")
 require("smart-splits-config")
 require("mappings")
-require("lazy-config")
 require("mason-config")
 require("cmp-config")
 require("null-ls-config")

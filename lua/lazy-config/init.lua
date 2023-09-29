@@ -45,7 +45,7 @@ require("lazy").setup({
 	"mrjones2014/smart-splits.nvim",
 	"nvim-lualine/lualine.nvim",
 	"rebelot/kanagawa.nvim",
-	"lukas-reineke/indent-blankline.nvim",
+	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	"norcalli/nvim-colorizer.lua",
 	"folke/tokyonight.nvim",
 	"tjdevries/colorbuddy.nvim",
