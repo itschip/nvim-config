@@ -1,6 +1,8 @@
 vim.opt.background = "dark"
 vim.opt.termguicolors = true
 
+local what
+
 -- Default options:
 require("kanagawa").setup({
 	compile = false, -- enable compiling the colorscheme
@@ -32,6 +34,8 @@ require("kanagawa").setup({
 		return {
 			-- yellow background for diagnostics warning
 			DiagnosticError = { fg = "#ef4444" },
+			DiagnosticWarn = { fg = "#fb923c" },
+
 			CursorLine = { bg = "#1d1f21" },
 			CursorLineNr = { fg = "#d97706" },
 

@@ -11,6 +11,7 @@ require("mason-null-ls").setup({
 		"gofmt",
 		"rustfmt",
 		"shfmt",
+		"dotnet-charpier",
 	},
 
 	null_ls_sources = {
