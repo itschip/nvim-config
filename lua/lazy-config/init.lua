@@ -59,4 +59,13 @@ require("lazy").setup({
 	"folke/tokyonight.nvim",
 	"tjdevries/colorbuddy.nvim",
 	"tjdevries/gruvbuddy.nvim",
+	{
+		"ellisonleao/gruvbox.nvim",
+		priority = 1000,
+		config = function()
+			vim.o.background = "dark"
+			vim.cmd("colorscheme gruvbox")
+			vim.cmd("hi NonText guifg=bg")
+		end,
+	},
 })

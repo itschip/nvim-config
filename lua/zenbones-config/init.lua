@@ -1,8 +1,6 @@
 vim.opt.background = "dark"
 vim.opt.termguicolors = true
 
-local what
-
 -- Default options:
 require("kanagawa").setup({
 	compile = false, -- enable compiling the colorscheme
@@ -65,7 +63,7 @@ require("kanagawa").setup({
 	},
 })
 
-vim.cmd("colorscheme kanagawa-dragon")
+--vim.cmd("colorscheme kanagawa-dragon")
 --vim.cmd("colorscheme gruber-darker")
 --vim.cmd("colorscheme zenburned")
 --vim.cmd("colorscheme tokyonight-night")
