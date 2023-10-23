@@ -53,19 +53,17 @@ require("lazy").setup({
 	},
 	"mrjones2014/smart-splits.nvim",
 	"nvim-lualine/lualine.nvim",
-	"rebelot/kanagawa.nvim",
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	"norcalli/nvim-colorizer.lua",
-	"folke/tokyonight.nvim",
-	"tjdevries/colorbuddy.nvim",
-	"tjdevries/gruvbuddy.nvim",
+	{ "EdenEast/nightfox.nvim" },
 	{
-		"ellisonleao/gruvbox.nvim",
+		"projekt0n/github-nvim-theme",
+	},
+	{
+		"Shatur/neovim-ayu",
+		lazy = false,
 		priority = 1000,
 		config = function()
-			vim.o.background = "dark"
-			vim.cmd("colorscheme gruvbox")
-			vim.cmd("hi NonText guifg=bg")
+			vim.cmd("colorscheme ayu-mirage")
 		end,
 	},
 })
