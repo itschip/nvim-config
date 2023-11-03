@@ -37,7 +37,7 @@ require("lazy").setup({
 		},
 	},
 	"saadparwaiz1/cmp_luasnip",
-	"jose-elias-alvarez/null-ls.nvim",
+	"nvimtools/none-ls.nvim",
 	{
 		"windwp/nvim-autopairs",
 		config = function()
@@ -52,18 +52,15 @@ require("lazy").setup({
 		end,
 	},
 	"mrjones2014/smart-splits.nvim",
-	"nvim-lualine/lualine.nvim",
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	{ "EdenEast/nightfox.nvim" },
+	"nvim-lualine/lualine.nvim",
+	{ "rktjmp/lush.nvim" },
 	{
-		"projekt0n/github-nvim-theme",
-	},
-	{
-		"Shatur/neovim-ayu",
-		lazy = false,
+		"catppuccin/nvim",
+		name = "catppuccin",
 		priority = 1000,
 		config = function()
-			vim.cmd("colorscheme ayu-mirage")
+			vim.cmd("colorscheme catppuccin-macchiato")
 		end,
 	},
 })

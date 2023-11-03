@@ -1,7 +1,5 @@
 local set = vim.opt
 
-vim.g.airline_theme = "base16_gruvbox_dark_hard"
-
 set.expandtab = true
 set.smarttab = true
 set.shiftwidth = 4
@@ -34,8 +32,7 @@ set.clipboard = "unnamed"
 vim.opt.list = true
 vim.opt.listchars:append("space:⋅")
 
+vim.g.ayucolor = "mirage"
+
 require("ibl").setup({
-	space_char_blankline = " ",
-	show_current_context = true,
-	show_current_context_start = true,
 })
