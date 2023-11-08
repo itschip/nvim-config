@@ -28,11 +28,10 @@ set.clipboard = "unnamed"
 
 --vim.opt.list = true
 --vim.opt.listchars:append("space:⋅")
+--
+vim.opt.cursorline = false
 
 vim.opt.list = true
 vim.opt.listchars:append("space:⋅")
 
-vim.g.ayucolor = "mirage"
-
-require("ibl").setup({
-})
+require("ibl").setup({})
