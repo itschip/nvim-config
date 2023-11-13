@@ -56,25 +56,15 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	{ "rktjmp/lush.nvim" },
 	{
-		"rebelot/kanagawa.nvim",
+		-- Theme inspired by Atom
+		"navarasu/onedark.nvim",
 		priority = 1000,
 		config = function()
-			--vim.cmd("colorscheme kanagawa-dragon")
-		end,
-	},
-	{
-		"rose-pine/neovim",
-		name = "rose-pine",
-		priority = 999,
-		config = function()
-			require("rose-pine").setup({
-				disable_background = true,
+			require("onedark").setup({
+				style = "warmer",
 			})
 
-			vim.cmd("colorscheme rose-pine")
-
-			vim.cmd("highlight Normal guibg=NONE ctermbg=NONE")
-			vim.cmd("highlight NormalFloat guibg=NONE ctermbg=NONE")
+			vim.cmd.colorscheme("onedark")
 		end,
 	},
 })
