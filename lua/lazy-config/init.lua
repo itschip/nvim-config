@@ -61,10 +61,13 @@ require("lazy").setup({
 		priority = 1000,
 		config = function()
 			require("onedark").setup({
-				style = "warmer",
+				style = "darker",
+				highlights = {
+					Visual = { bg = "#4a4a4a" },
+				},
 			})
 
-			vim.cmd.colorscheme("onedark")
+			require("onedark").load()
 		end,
 	},
 })
