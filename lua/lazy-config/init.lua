@@ -56,17 +56,12 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	{ "rktjmp/lush.nvim" },
 	{
-		-- Theme inspired by Atom
 		"navarasu/onedark.nvim",
 		priority = 1000,
 		config = function()
 			require("onedark").setup({
 				style = "darker",
-				highlights = {
-					Visual = { bg = "#4a4a4a" },
-				},
 			})
-
 			require("onedark").load()
 		end,
 	},
