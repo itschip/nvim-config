@@ -55,7 +55,7 @@ require("lazy").setup({
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	"nvim-lualine/lualine.nvim",
 	{ "rktjmp/lush.nvim" },
-	{
+	--[[{
 		"navarasu/onedark.nvim",
 		priority = 1000,
 		config = function()
@@ -63,6 +63,13 @@ require("lazy").setup({
 				style = "darker",
 			})
 			require("onedark").load()
+		end,
+	}, --]]
+	{
+		"savq/melange-nvim",
+		priority = 1000,
+		config = function()
+			vim.cmd("colorscheme melange")
 		end,
 	},
 })

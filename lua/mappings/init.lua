@@ -23,7 +23,7 @@ map("n", "<leader>o", ":Explore<CR>", opts)
 
 map("n", "<leader>ff", ":Telescope find_files<CR>", opts)
 map("n", "<leader>fw", ":Telescope live_grep<CR>", opts)
-map("n", "<leader>f", ":Telescope git_files<CR>", opts)
+map("n", "<leader>fg", ":Telescope git_files<CR>", opts)
 map("i", "jk", "<C-\\><C-n>", opts)
 map("i", "jj", "<C-\\><C-n>", opts)
 
