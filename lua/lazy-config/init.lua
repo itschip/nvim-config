@@ -55,6 +55,19 @@ require("lazy").setup({
 	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 	"nvim-lualine/lualine.nvim",
 	{ "rktjmp/lush.nvim" },
+	{
+		"rose-pine/neovim",
+		as = "rose-pine",
+		priority = 1000,
+		config = function()
+			require("rose-pine").setup({
+				styles = {
+					transparency = true,
+				},
+			})
+			vim.cmd("colorscheme rose-pine")
+		end,
+	},
 	--[[{
 		"navarasu/onedark.nvim",
 		priority = 1000,
@@ -64,12 +77,5 @@ require("lazy").setup({
 			})
 			require("onedark").load()
 		end,
-	}, --]]
-	{
-		"savq/melange-nvim",
-		priority = 1000,
-		config = function()
-			vim.cmd("colorscheme melange")
-		end,
-	},
+	},--]]
 })
