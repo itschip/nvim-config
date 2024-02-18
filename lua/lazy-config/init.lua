@@ -56,26 +56,18 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	{ "rktjmp/lush.nvim" },
 	{
-		"rose-pine/neovim",
-		as = "rose-pine",
+		"rebelot/kanagawa.nvim",
 		priority = 1000,
 		config = function()
-			require("rose-pine").setup({
-				styles = {
-					transparency = true,
+			require("kanagawa").setup({
+				colors = {
+					palette = {
+						dragonGreen2 = "#87a987",
+					},
 				},
 			})
-			vim.cmd("colorscheme rose-pine")
+
+			vim.cmd("colorscheme kanagawa-dragon")
 		end,
 	},
-	--[[{
-		"navarasu/onedark.nvim",
-		priority = 1000,
-		config = function()
-			require("onedark").setup({
-				style = "darker",
-			})
-			require("onedark").load()
-		end,
-	},--]]
 })
