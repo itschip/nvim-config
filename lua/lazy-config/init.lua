@@ -52,22 +52,38 @@ require("lazy").setup({
 		end,
 	},
 	"mrjones2014/smart-splits.nvim",
-	{ "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
-	"nvim-lualine/lualine.nvim",
-	{ "rktjmp/lush.nvim" },
 	{
-		"rebelot/kanagawa.nvim",
-		priority = 1000,
+		"lukas-reineke/indent-blankline.nvim",
+		main = "ibl",
 		config = function()
-			require("kanagawa").setup({
-				colors = {
-					palette = {
-						dragonGreen2 = "#87a987",
-					},
+			require("ibl").setup({
+				indent = {
+					char = "|",
+					tab_char = "|",
 				},
 			})
-
-			vim.cmd("colorscheme kanagawa-dragon")
+		end,
+	},
+	"nvim-lualine/lualine.nvim",
+	{ "rktjmp/lush.nvim" },
+	--[[ {
+		"rose-pine/neovim",
+		name = "rose-pine",
+		priority = 1000,
+		config = function()
+			-- setup must be called before loading
+			vim.cmd.colorscheme("rose-pine-dawn")
+		end,
+	}, -=]]
+	{
+		"navarasu/onedark.nvim",
+		priority = 1000,
+		config = function()
+			require("onedark").setup({
+				style = "light",
+			})
+			-- setup must be called before loading
+			vim.cmd.colorscheme("onedark")
 		end,
 	},
 })

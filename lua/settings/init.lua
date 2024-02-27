@@ -31,7 +31,7 @@ set.clipboard = "unnamed"
 --
 vim.opt.cursorline = false
 
-vim.opt.list = true
+vim.opt.list = false
 vim.opt.listchars:append("space:⋅")
 
-require("ibl").setup({})
+require("ibl").setup()
