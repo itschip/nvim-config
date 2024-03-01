@@ -66,24 +66,24 @@ require("lazy").setup({
 	},
 	"nvim-lualine/lualine.nvim",
 	{ "rktjmp/lush.nvim" },
-	--[[ {
-		"rose-pine/neovim",
-		name = "rose-pine",
-		priority = 1000,
-		config = function()
-			-- setup must be called before loading
-			vim.cmd.colorscheme("rose-pine-dawn")
-		end,
-	}, -=]]
 	{
-		"navarasu/onedark.nvim",
+		"rose-pine/neovim",
 		priority = 1000,
 		config = function()
-			require("onedark").setup({
-				style = "light",
+			require("rose-pine").setup({
+				enable = {
+					terminal = true,
+					legacy_highlights = true, -- Improve compatibility for previous versions of Neovim
+					migrations = true, -- Handle deprecated options automatically
+				},
+				styles = {
+					bold = true,
+					italic = false,
+					transparency = true,
+				},
 			})
-			-- setup must be called before loading
-			vim.cmd.colorscheme("onedark")
+
+			vim.cmd("colorscheme rose-pine")
 		end,
 	},
 })
