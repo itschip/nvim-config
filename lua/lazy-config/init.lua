@@ -37,7 +37,12 @@ require("lazy").setup({
 		},
 	},
 	"saadparwaiz1/cmp_luasnip",
-	"nvimtools/none-ls.nvim",
+	{
+		"nvimtools/none-ls.nvim",
+		dependencies = {
+			"nvimtools/none-ls-extras.nvim",
+		},
+	},
 	{
 		"windwp/nvim-autopairs",
 		config = function()
