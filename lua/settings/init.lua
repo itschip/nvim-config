@@ -29,7 +29,7 @@ set.clipboard = "unnamed"
 --vim.opt.list = true
 --vim.opt.listchars:append("space:⋅")
 --
-vim.opt.cursorline = false
+--vim.opt.cursorline = false
 
 vim.opt.list = false
 vim.opt.listchars:append("space:⋅")
