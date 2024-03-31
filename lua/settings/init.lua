@@ -22,14 +22,14 @@ set.relativenumber = true
 set.number = true
 set.cursorline = true
 
-set.hidden = true
+set.hidden = false
 
 set.clipboard = "unnamed"
 
 --vim.opt.list = true
 --vim.opt.listchars:append("space:⋅")
 --
---vim.opt.cursorline = false
+vim.opt.cursorline = false
 
 vim.opt.list = false
 vim.opt.listchars:append("space:⋅")

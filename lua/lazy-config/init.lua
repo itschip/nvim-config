@@ -71,11 +71,13 @@ require("lazy").setup({
 	},
 	"nvim-lualine/lualine.nvim",
 	"tpope/vim-fugitive",
-	{ "rktjmp/lush.nvim" },
 	{
-		"felipeagc/fleet-theme-nvim",
+        "rose-pine/neovim",
+        name = "rose-pine",
 		config = function()
-			vim.cmd("colorscheme fleet")
+            require("rose-pine").setup()
+
+            vim.cmd("colorscheme rose-pine")
 		end,
 	},
 })
