@@ -72,12 +72,13 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	"tpope/vim-fugitive",
 	{
-        "rebelot/kanagawa.nvim",
+        "catppuccin/nvim",
+        name = "catppuccin",
 		config = function()
-            require("kanagawa").setup({
-                transparent = false
+            require("catppuccin").setup({
+                transparent_background = true
             })
-            vim.cmd("colorscheme kanagawa-dragon")
+            vim.cmd("colorscheme catppuccin")
 		end,
 	},
 })
