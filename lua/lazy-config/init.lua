@@ -72,18 +72,12 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	"tpope/vim-fugitive",
 	{
-        "rose-pine/neovim",
-        name = "rose-pine",
+        "rebelot/kanagawa.nvim",
 		config = function()
-            require("rose-pine").setup({
-                styles = {
-                    italic = false,
-                    bold = false,
-                    transparency = true,
-                },
+            require("kanagawa").setup({
+                transparent = false
             })
-
-            vim.cmd("colorscheme rose-pine")
+            vim.cmd("colorscheme kanagawa-dragon")
 		end,
 	},
 })

@@ -52,6 +52,11 @@ map("n", "<leader><leader>k", "<cmd>SmartResizeUp<cr>", opts)
 map("n", "<leader><leader>j", "<cmd>SmartResizeDown<cr>", opts)
 map("n", "<leader><leader>h", "<cmd>SmartResizeLeft<cr>", opts)
 map("n", "<leader><leader>l", "<cmd>SmartResizeRight<cr>", opts)
+
+
+map("n", "<leader>h", ":split<CR>", opts)
+map("n", "<leader>v", ":vsplit<CR>", opts)
+
 -- Nvim tree
 
 -- Lazygit stuff

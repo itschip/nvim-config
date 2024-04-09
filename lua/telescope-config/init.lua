@@ -1,9 +1,39 @@
 require("telescope").setup({
 	defaults = {
+        preview = false,
+        selection_strategy = "reset",
+        sorting_strategy = "descending",
+        scroll_strategy = "cycle",
+        winblend = 0,
+        color_devicons = true,
 		layout_config = {
-			horizontal = {
-				prompt_position = "top",
-			},
-		},
+            width = 0.95,
+            height = 0.85,
+              -- preview_cutoff = 120,
+            prompt_position = "top",
+            horizontal = {
+                width = 0.8,
+                height = 0.4,
+                preview_width = function(_, cols, _)
+                  if cols > 200 then
+                    return math.floor(cols * 0.4)
+                  else
+                    return math.floor(cols * 0.6)
+                  end
+                end,
+            },
+
+            vertical = {
+                width = 0.3,
+                height = 0.4,
+                preview_height = 0.5,
+            },
+
+            flex = {
+                horizontal = {
+                  preview_width = 0.0,
+                },
+            },
+        }
 	},
 })
