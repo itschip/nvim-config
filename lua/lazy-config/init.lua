@@ -71,27 +71,9 @@ require("lazy").setup({
 	},
 	"nvim-lualine/lualine.nvim",
 	"tpope/vim-fugitive",
-    {"navarasu/onedark.nvim",
+    {"tjdevries/colorbuddy.nvim",
         config = function() 
-            require('onedark').setup {
-                style = 'darker',
-            }
-            require('onedark').load()
+            vim.cmd.colorscheme("gruvbuddy")
 	    end
     },
-	--[[{
-        "rose-pine/neovim",
-        name = "rose-pine",
-		config = function()
-            require("rose-pine").setup({
-                styles = {
-                    bold = true,
-                    italic = false,
-                    transparency = true,
-                },
-            })
-
-            vim.cmd("colorscheme rose-pine")
-		end,
-	},--]]
 })
