@@ -71,9 +71,16 @@ require("lazy").setup({
 	},
 	"nvim-lualine/lualine.nvim",
 	"tpope/vim-fugitive",
-    {"tjdevries/colorbuddy.nvim",
-        config = function() 
-            vim.cmd.colorscheme("gruvbuddy")
-	    end
-    },
+    {
+      'navarasu/onedark.nvim',
+      lazy = false,
+      priority = 1000,
+      config = function()
+         require('onedark').setup {
+            style = 'warm'
+        }
+        require('onedark').load()
+        vim.cmd("colorscheme onedark")
+      end
+    }
 })

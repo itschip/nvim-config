@@ -24,6 +24,9 @@ set.cursorline = true
 
 set.hidden = false
 
+
+set.linespace = 10
+
 set.clipboard = "unnamed"
 
 --vim.opt.list = true
