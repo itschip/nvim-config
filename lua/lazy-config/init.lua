@@ -72,15 +72,15 @@ require("lazy").setup({
 	"nvim-lualine/lualine.nvim",
 	"tpope/vim-fugitive",
     {
-      'navarasu/onedark.nvim',
+      'sainnhe/sonokai',
       lazy = false,
       priority = 1000,
       config = function()
          require('onedark').setup {
             style = 'warm'
         }
-        require('onedark').load()
-        vim.cmd("colorscheme onedark")
+        vim.g.sonokai_enable_italic = false
+        vim.cmd.colorscheme('sonokai')
       end
     }
 })

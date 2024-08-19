@@ -16,7 +16,7 @@ set.splitright = true
 set.wrap = false
 set.scrolloff = 10
 set.fileencoding = "utf-8"
-set.termguicolors = true
+set.termguicolors = false
 
 set.relativenumber = true
 set.number = true
