@@ -76,9 +76,6 @@ require("lazy").setup({
       lazy = false,
       priority = 1000,
       config = function()
-         require('onedark').setup {
-            style = 'warm'
-        }
         vim.g.sonokai_enable_italic = false
         vim.cmd.colorscheme('sonokai')
       end
