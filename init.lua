@@ -22,3 +22,5 @@ require("smart-splits-config")
 require("treesitter-config")
 require("telescope-config")
 require("lualine-config")
+
+--vim.cmd("colorscheme habamax")

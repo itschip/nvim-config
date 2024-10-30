@@ -16,13 +16,14 @@ set.splitright = true
 set.wrap = false
 set.scrolloff = 10
 set.fileencoding = "utf-8"
-set.termguicolors = false
+set.termguicolors = true
 
 set.relativenumber = true
 set.number = true
 set.cursorline = true
 
 set.hidden = false
+
 
 
 set.linespace = 10
