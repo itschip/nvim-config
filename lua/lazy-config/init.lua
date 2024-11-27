@@ -1,7 +1,5 @@
 require("lazy").setup({
-    --"github/copilot.vim",
     "kyazdani42/nvim-web-devicons",
-    "nvim-lua/plenary.nvim",
     "ThePrimeagen/harpoon",
     "nvim-telescope/telescope.nvim",
     "williamboman/mason.nvim",
@@ -9,8 +7,6 @@ require("lazy").setup({
     "neovim/nvim-lspconfig",
     "hrsh7th/cmp-nvim-lsp",
     "hrsh7th/cmp-buffer",
-    "hrsh7th/cmp-path",
-    "hrsh7th/cmp-cmdline",
     "hrsh7th/nvim-cmp",
     "L3MON4D3/LuaSnip",
     {
@@ -28,15 +24,18 @@ require("lazy").setup({
         end,
     },
     {
-        "folke/todo-comments.nvim",
-        dependencies = { "nvim-lua/plenary.nvim" },
+        'stevearc/conform.nvim',
         opts = {
-            -- your configuration comes here
-            -- or leave it empty to use the default settings
-            -- refer to the configuration section below
+            formatters_by_ft = {
+                ["go"] = { "gofumpt"},
+                ["javascript"] = { "dprint", { "prettierd", } },
+                ["javascriptreact"] = { "dprint", { "prettierd" } },
+                ["typescript"] = { "prettierd", stop_after_first = true },
+                ["typescriptreact"] = { "prettierd", stop_after_first = true },
+            },
         },
+
     },
-    "saadparwaiz1/cmp_luasnip",
     {
         "nvimtools/none-ls.nvim",
         dependencies = {
@@ -73,21 +72,26 @@ require("lazy").setup({
     "tpope/vim-fugitive",
     {
         "rebelot/kanagawa.nvim",
-        config = function ()
+        config = function()
             require('kanagawa').setup({
-                colors = {                   -- add/modify theme and palette colors
+                colors = { -- add/modify theme and palette colors
                     palette = {},
-                    theme = { wave = {}, lotus = {}, dragon = {}, all = {
-                        ui = {
-                            pmenu = {
-                                bg_sel = "#afaf87",
-                                fg_sel = "#1c1c1c",
-                                bg = "#262626",
-                                bg_thumb= "#767676",
-                                bg_sbar = "#262626"
+                    theme = {
+                        wave = {},
+                        lotus = {},
+                        dragon = {},
+                        all = {
+                            ui = {
+                                pmenu = {
+                                    bg_sel = "#afaf87",
+                                    fg_sel = "#1c1c1c",
+                                    bg = "#262626",
+                                    bg_thumb = "#767676",
+                                    bg_sbar = "#262626"
+                                }
                             }
                         }
-                    } },
+                    },
                 },
             })
 
@@ -95,4 +99,3 @@ require("lazy").setup({
         end
     }
 })
-

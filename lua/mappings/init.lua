@@ -28,8 +28,6 @@ map("i", "jk", "<C-\\><C-n>", opts)
 map("i", "jj", "<C-\\><C-n>", opts)
 
 -- Terminal
-map("n", "<leader>gg", "<cmd>lua _lazygit_toggle()<cr>", opts)
-map("n", "<leader>fm", "<cmd>lua _lazyfivem_toggle()<cr>", opts)
 map("n", "<C-\\>", "<cmd>ToggleTerm<cr>", opts)
 map("n", "<leader>th", "<cmd>ToggleTerm size-10 direction=horizontal<cr>", opts)
 map("n", "<leader>tf", "<cmd>ToggleTerm direction=float<cr>", opts)
@@ -60,39 +58,3 @@ map("n", "<leader>v", ":vsplit<CR>", opts)
 
 -- Nvim tree
 
--- Lazygit stuff
-local lazygit = Terminal:new({
-	cmd = "lazygit",
-	dir = "git_dir",
-	direction = "float",
-	count = 10,
-	float_opts = {
-		border = "double",
-	},
-	-- function to run on opening the terminal
-	on_open = function(term)
-		vim.cmd("startinsert!")
-		vim.api.nvim_buf_set_keymap(term.bufnr, "n", "q", "<cmd>close<CR>", { noremap = true, silent = true })
-	end,
-	-- function to run on closing the terminal
-	on_close = function(term)
-		vim.cmd("Closing terminal")
-	end,
-})
-
-function _lazygit_toggle()
-	lazygit:toggle()
-end
-
-local lazyfivem = Terminal:new({
-	cmd = "lazyfivem",
-	direction = "float",
-	count = 15,
-	float = {
-		border = "double",
-	},
-})
-
-function _lazyfivem_toggle()
-	lazyfivem:toggle()
-end
