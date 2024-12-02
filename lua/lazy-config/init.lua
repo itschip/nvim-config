@@ -74,6 +74,8 @@ require("lazy").setup({
         "rebelot/kanagawa.nvim",
         config = function()
             require('kanagawa').setup({
+                keywordStyle = { italic = false},
+                statementStyle = { bold = true },
                 colors = { -- add/modify theme and palette colors
                     palette = {},
                     theme = {
