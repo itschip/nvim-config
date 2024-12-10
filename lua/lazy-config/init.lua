@@ -32,6 +32,7 @@ require("lazy").setup({
                 ["javascriptreact"] = { "dprint", { "prettierd" } },
                 ["typescript"] = { "prettierd", stop_after_first = true },
                 ["typescriptreact"] = { "prettierd", stop_after_first = true },
+                ["rust"] = { "rustfmt", stop_after_first = true }
             },
         },
 
