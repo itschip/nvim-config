@@ -24,21 +24,15 @@ set.cursorline = true
 
 set.hidden = false
 
-
-
 set.linespace = 10
-
 set.clipboard = "unnamed"
 
---vim.opt.list = true
---vim.opt.listchars:append("space:⋅")
---
 vim.opt.cursorline = false
 
 vim.opt.list = false
 vim.opt.listchars:append("space:⋅")
 
-require("ibl").setup()
+--require("ibl").setup()
 
 vim.api.nvim_create_autocmd("BufWritePre", {
     pattern = "*",

@@ -3,6 +3,7 @@ require("telescope").setup({
         preview = false,
         selection_strategy = "reset",
         sorting_strategy = "descending",
+        --layout_strategy = 'grey',
         scroll_strategy = "cycle",
         winblend = 0,
         color_devicons = true,
@@ -37,3 +38,5 @@ require("telescope").setup({
         }
 	},
 })
+
+--require("telescope").load_extension('grey')

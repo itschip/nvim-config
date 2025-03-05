@@ -11,16 +11,13 @@ if not vim.loop.fs_stat(lazypath) then
 end
 vim.opt.rtp:prepend(lazypath)
 
-require("lazy-config")
 require("settings")
+require("lazy-config")
 require("smart-splits-config")
 require("mappings")
 require("mason-config")
 require("cmp-config")
 require("null-ls-config")
-require("smart-splits-config")
 require("treesitter-config")
 require("telescope-config")
 require("lualine-config")
-
---vim.cmd("colorscheme habamax")
