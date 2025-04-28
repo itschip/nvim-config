@@ -1,5 +1,8 @@
 require("telescope").setup({
 	defaults = {
+        --prompt_prefix = '',
+        --entry_prefix = ' ',
+        --selection_caret = ' ',
         preview = false,
         selection_strategy = "reset",
         sorting_strategy = "descending",
@@ -39,4 +42,3 @@ require("telescope").setup({
 	},
 })
 
---require("telescope").load_extension('grey')

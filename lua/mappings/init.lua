@@ -40,6 +40,7 @@ map("n", "gr", "<cmd>lua vim.lsp.buf.references()<cr>", opts)
 map("n", "gl", "<cmd>lua vim.diagnostic.open_float()<cr>", opts)
 map("n", "gc", "<cmd>lua vim.lsp.buf.code_action()<cr>", opts)
 map("n", "gh", "<cmd>lua vim.lsp.buf.hover()<cr>", opts)
+map("n", "gq", "<cmd>lua vim.diagnostic.setqflist()<cr>", opts)
 
 -- Smart Splits
 map("n", "<C-h>", "<cmd>lua require('smart-splits').move_cursor_left()<cr>", opts)
